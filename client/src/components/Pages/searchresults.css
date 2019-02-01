@@ -1,0 +1,23 @@
+.searchresults {
+    
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 100%;
+    max-height: 150px;
+    text-align: left
+    
+  }
+  a { display: inline-block;
+    
+  }
+
+  .linkalign{
+    float: right;
+  }
+
+  .imagesize{
+      width:200px;
+      height:200px
+  }
+
+  
