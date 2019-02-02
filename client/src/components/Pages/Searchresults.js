@@ -19,13 +19,6 @@ export default class Searchresults extends React.Component {
     };
 
 
-    loadBooks = () => {
-        console.log(" I need to save this book")
-        this.setState({
-            names: ""
-        })
-
-    }
 
        savebook = (info) => {
 
@@ -87,6 +80,7 @@ export default class Searchresults extends React.Component {
     }
 
     render() {
+        //deconstruct the object
         const { booksarray } = this.state
 
         return (
@@ -100,6 +94,7 @@ export default class Searchresults extends React.Component {
                     <button className="btn btn-info" type="submit"   > Search</button>
                 </form>
                 <span> {booksarray.map((book) => {
+                    // deconstruct
                     let { title, description, imageLinks, authors, infoLink } = book.volumeInfo
                     // console.log("The item id are " + item.id)
                     return (

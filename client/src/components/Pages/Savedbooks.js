@@ -17,6 +17,7 @@ export default class Savedbooks extends React.Component {
             .catch(err => console.log(err));
     }
 
+    //function call to delete a book
     deleteBook = id => {
         API.deleteBook(id)
           .then(res =>API.getBooks()
